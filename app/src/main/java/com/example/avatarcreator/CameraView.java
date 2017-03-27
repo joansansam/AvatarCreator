@@ -1,5 +1,7 @@
 package com.example.avatarcreator;
 
+//**Code inspired by: https://inducesmile.com/android/android-camera2-api-example-tutorial/ **//
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.Manifest;
