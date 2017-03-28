@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -11,25 +12,68 @@
     tools:context="com.example.avatarcreator.MainActivity">
 
 
-    <!--EditText
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:inputType="number"
+        android:inputType="textPassword"
         android:ems="10"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:id="@+id/editText2"
-        android:text="Age" /-->
+        android:text="Password"
+        android:layout_below="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        tools:background="@android:drawable/dialog_holo_light_frame" />
+
+    <TextView
+        android:text="Genika"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dip"
+        app:srcCompat="@drawable/ogo"
+        android:id="@+id/imageView2"
+        android:layout_above="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <TextView
+        android:text="Welcome to the Avatar Creator. Log in to start:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Username"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        tools:background="@android:drawable/dialog_holo_light_frame" />
 
     <Button
         android:text="Open Camera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
         android:id="@+id/button"
-        android:onClick="openCamera" />
+        android:onClick="openCamera"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:backgroundTint="?attr/colorPrimary"
+        tools:background="@android:drawable/dialog_frame"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
 
 </RelativeLayout>

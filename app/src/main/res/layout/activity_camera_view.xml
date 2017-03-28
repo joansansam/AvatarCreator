@@ -26,6 +26,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="16dp"
         android:layout_marginTop="16dp"
-        android:text="Get Avatar" />
+        android:text="Get Avatar"
+        android:background="@android:drawable/dialog_frame"
+        style="@style/Widget.AppCompat.Button"
+        android:backgroundTint="@color/colorPrimary" />
 
 </RelativeLayout>
