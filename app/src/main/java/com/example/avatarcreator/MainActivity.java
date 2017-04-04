@@ -5,7 +5,9 @@ import android.content.Intent;
 import android.hardware.camera2.CameraManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.method.LinkMovementMethod;
 import android.view.View;
+import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -14,6 +16,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        TextView mLink = (TextView) findViewById(R.id.textView);
+        if (mLink != null) {
+            mLink.setMovementMethod(LinkMovementMethod.getInstance());
+        }
     }
 
     public void openCamera(View view) {
@@ -29,4 +36,11 @@ public class MainActivity extends AppCompatActivity {
         // CameraManager manager = (CameraManager) getSystemService(Context.CAMERA_SERVICE);
 
     }
+
+    /*public void MovementMethod() {
+        TextView mLink = (TextView) findViewById(R.id.textView);
+        if (mLink != null) {
+            mLink.setMovementMethod(LinkMovementMethod.getInstance());
+        }
+    }*/
 }

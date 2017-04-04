@@ -22,14 +22,14 @@
         android:layout_below="@+id/editText"
         android:layout_alignStart="@+id/editText"
         tools:background="@android:drawable/dialog_holo_light_frame" />
-
+    
     <TextView
-        android:text="Genika"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/textView"
+        android:text="@string/link"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"/>
 
     <ImageView
         android:layout_width="wrap_content"

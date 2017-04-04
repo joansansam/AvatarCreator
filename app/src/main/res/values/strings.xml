@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">AvatarCreator</string>
     <string name="take_picture">Take picture</string>
+    <string name="link"><a href="https://genikateam.weebly.com/">Genika Website</a></string>
 </resources>
