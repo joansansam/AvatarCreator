@@ -15,20 +15,30 @@
         android:id="@+id/texture"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/btn_takepicture"
-        android:layout_alignParentTop="true"/>
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/btn_takepicture" />
 
     <Button
         android:id="@+id/btn_takepicture"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Take Picture"
+        android:background="@android:drawable/dialog_frame"
+        style="@style/Widget.AppCompat.Button"
+        android:backgroundTint="@color/colorPrimary"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btn_opendetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Get Avatar"
         android:background="@android:drawable/dialog_frame"
         style="@style/Widget.AppCompat.Button"
-        android:backgroundTint="@color/colorPrimary" />
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

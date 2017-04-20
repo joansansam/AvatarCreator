@@ -2,6 +2,7 @@ package com.example.avatarcreator;
 
 //**Code inspired by: https://inducesmile.com/android/android-camera2-api-example-tutorial/ **//
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.Manifest;
@@ -48,6 +49,7 @@ import java.util.List;
 public class CameraView extends AppCompatActivity {
     private static final String TAG = "CameraView";
     private Button takePictureButton;
+    private Button getDetailButton;
     private TextureView textureView;
     private static final SparseIntArray ORIENTATIONS = new SparseIntArray();
 
@@ -87,6 +89,22 @@ public class CameraView extends AppCompatActivity {
                 takePicture();
             }
         });
+
+        getDetailButton = (Button) findViewById(R.id.btn_opendetail);
+        assert getDetailButton != null;
+        getDetailButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getDetail();
+            }
+        });
+
+    }
+
+    private void getDetail() {
+        closeCamera();
+        Intent intent = new Intent(this, DetailActivity.class);
+        startActivity(intent);
     }
 
     TextureView.SurfaceTextureListener textureListener = new TextureView.SurfaceTextureListener() {
